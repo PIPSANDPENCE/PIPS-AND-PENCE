@@ -180,44 +180,43 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-slate-900/40 border-t border-slate-900">
-        <div class="max-w-3xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-xs font-semibold tracking-widest uppercase text-cyan-400 mb-3">Get in Touch</h2>
-                <h3 class="text-3xl font-bold tracking-tight text-white mb-4">Ready to Automate or Scale Your Trading?</h3>
-                <p class="text-slate-400">Fill out the brief form below to discuss your CFD strategy or custom bot requirements.</p>
-            </div>
-            
-            <form class="space-y-6 bg-slate-900 p-8 rounded-2xl border border-slate-800">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
-                        <input type="text" placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
-                        <input type="email" placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Scope / Inquiry Type</label>
-                    <select class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
-                        <option>Custom MT4 / MT5 EA or cTrader cBot Development</option>
-                        <option>CFD Trading Strategy Consulting</option>
-                        <option>Both / Other Inquiry</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Details</label>
-                    <textarea rows="4" placeholder="Describe your indicators, target platform (MT4/MT5/cTrader), and risk parameters..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold py-3.5 rounded-lg transition-all shadow-lg shadow-cyan-500/10">
-                    Send Consultation Request
-                </button>
-            </form>
+    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6 bg-slate-900 p-8 rounded-2xl border border-slate-800">
+    
+    <!-- Your Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="b822d232-25f1-4ce6-b1c2-2607e0015dff">
+    
+    <!-- Email Subject Line -->
+    <input type="hidden" name="subject" value="New Consultation Request from Pips & Pence">
+
+    <div class="grid md:grid-cols-2 gap-6">
+        <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+            <input type="text" name="name" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
         </div>
-    </section>
+        <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+            <input type="email" name="email" placeholder="john@example.com" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
+        </div>
+    </div>
+    
+    <div>
+        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Scope / Inquiry Type</label>
+        <select name="inquiry_type" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
+            <option>Custom MT4 / MT5 EA or cTrader cBot Development</option>
+            <option>CFD Trading Strategy Consulting</option>
+            <option>Both / Other Inquiry</option>
+        </select>
+    </div>
+
+    <div>
+        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Details</label>
+        <textarea name="message" rows="4" placeholder="Describe your indicators, target platform (MT4/MT5/cTrader), and risk parameters..." required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+    </div>
+
+    <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold py-3.5 rounded-lg transition-all shadow-lg shadow-cyan-500/10">
+        Send Consultation Request
+    </button>
+</form>
 
     <!-- Footer with Contact Address Placeholder -->
     <footer class="py-12 border-t border-slate-900 bg-slate-950 text-slate-400 text-sm">
