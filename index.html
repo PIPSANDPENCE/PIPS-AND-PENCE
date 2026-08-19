@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page-title">PIPS & PENCE | MT4, MT5 & cTrader Dev</title>
+    <title>Pips & Pence Innovative Solutions (P) Limited | Engineering & Technology Solutions</title>
+    <!-- Tailwind CSS CDN for Modern Minimalist Styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @keyframes marquee {
@@ -22,130 +23,123 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
 
-    <!-- Header -->
+    <!-- Header / Navigation -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/85 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-6 h-24 flex items-center justify-between">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo Image Only -->
             <a href="#" class="flex items-center">
                 <img src="logo.png" alt="Pips & Pence Logo" class="h-16 w-auto object-contain mix-blend-screen">
             </a>
             
-            <nav class="hidden md:flex items-center bg-slate-900/90 border border-slate-800 px-5 py-2 rounded-full shadow-lg space-x-6 text-sm font-semibold text-slate-200">
-                <a href="#services" class="hover:text-cyan-400 transition-colors" data-i18n="nav-services">Services</a>
-                <a href="#expertise" class="hover:text-cyan-400 transition-colors" data-i18n="nav-platforms">Platforms</a>
-                <a href="#process" class="hover:text-cyan-400 transition-colors" data-i18n="nav-process">Process</a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Engineering & Tech</a>
+                <a href="#process" class="hover:text-cyan-400 transition-colors">Process</a>
             </nav>
-
-            <div class="flex items-center gap-3">
-                <!-- Language Selector Dropdown -->
-                <select id="langSelect" onchange="switchLanguage(this.value)" class="bg-slate-900 text-slate-200 text-xs font-semibold border border-slate-800 rounded-lg px-2.5 py-2 focus:outline-none focus:border-cyan-500 cursor-pointer transition-all">
-                    <option value="en">English</option>
-                    <option value="et">Eesti</option>
-                    <option value="fr">Français</option>
-                    <option value="de">Deutsch</option>
-                    <option value="nl">Nederlands</option>
-                    <option value="pt">Português</option>
-                    <option value="es">Español</option>
-                    <option value="ja">日本語</option>
-                    <option value="it">Italiano</option>
-                    <option value="ar">العربية</option>
-                    <option value="ta">தமிழ்</option>
-                    <option value="te">తెలుగు</option>
-                    <option value="hi">हिन्दी</option>
-                </select>
-
-                <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-4 py-2 rounded-lg transition-all shadow-lg text-sm" data-i18n="nav-cta">
-                    Book Consult
-                </a>
-            </div>
+            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-5 py-2.5 rounded-lg transition-all shadow-lg shadow-cyan-500/10">
+                Get in Touch
+            </a>
         </div>
     </header>
 
-    <!-- Running Ticker -->
-    <div class="mt-24 bg-slate-900/90 border-b border-slate-800 h-10 flex items-center overflow-hidden relative z-40">
+    <!-- Running Text Ticker Bar -->
+    <div class="mt-20 bg-slate-900/90 border-b border-slate-800/80 h-12 flex items-center overflow-hidden relative z-40">
         <div class="overflow-hidden whitespace-nowrap w-full">
             <div class="animate-marquee flex items-center text-xs font-semibold tracking-widest uppercase text-cyan-400">
-                <span class="mx-6" data-i18n="ticker-1">Institutional CFD Strategies</span>
+                <!-- First Set -->
+                <span class="mx-6">Advanced Engineering Solutions</span>
                 <span class="mx-3 text-slate-700">&bull;</span>
-                <span class="mx-6" data-i18n="ticker-2">Multi-Platform Automation</span>
+                <span class="mx-6">System Architecture & Automation</span>
                 <span class="mx-3 text-slate-700">&bull;</span>
-                <span class="mx-6" data-i18n="ticker-3">MT4/MT5/cTrader</span>
+                <span class="mx-6">Software & Hardware Integration</span>
                 <span class="mx-3 text-slate-700">&bull;</span>
-                <span class="mx-6" data-i18n="ticker-4">Multi-Symbol & Asset EAs</span>
+                <span class="mx-6">Industrial Process Optimization</span>
                 <span class="mx-3 text-slate-700">&bull;</span>
-                <span class="mx-6" data-i18n="ticker-5">Portfolio Engines & Basket Trading</span>
+                <span class="mx-6">Custom Product Development</span>
                 <span class="mx-3 text-slate-700">&bull;</span>
-                <span class="mx-6" data-i18n="ticker-1">Institutional CFD Strategies</span>
+                <span class="mx-6">Digital Transformation Frameworks</span>
                 <span class="mx-3 text-slate-700">&bull;</span>
-                <span class="mx-6" data-i18n="ticker-2">Multi-Platform Automation</span>
+                
+                <!-- Repeated Set for Seamless Loop -->
+                <span class="mx-6">Advanced Engineering Solutions</span>
                 <span class="mx-3 text-slate-700">&bull;</span>
-                <span class="mx-6" data-i18n="ticker-3">MT4/MT5/cTrader</span>
+                <span class="mx-6">System Architecture & Automation</span>
                 <span class="mx-3 text-slate-700">&bull;</span>
-                <span class="mx-6" data-i18n="ticker-4">Multi-Symbol & Asset EAs</span>
+                <span class="mx-6">Software & Hardware Integration</span>
                 <span class="mx-3 text-slate-700">&bull;</span>
-                <span class="mx-6" data-i18n="ticker-5">Portfolio Engines & Basket Trading</span>
+                <span class="mx-6">Industrial Process Optimization</span>
+                <span class="mx-3 text-slate-700">&bull;</span>
+                <span class="mx-6">Custom Product Development</span>
+                <span class="mx-3 text-slate-700">&bull;</span>
+                <span class="mx-6">Digital Transformation Frameworks</span>
                 <span class="mx-3 text-slate-700">&bull;</span>
             </div>
         </div>
     </div>
 
     <!-- Hero Section -->
-    <section class="py-16 md:py-22 border-b border-slate-900">
+    <section class="py-20 md:py-28 border-b border-slate-900">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <span class="inline-block text-sm md:text-base font-bold tracking-wider uppercase bg-slate-900 px-6 py-2.5 rounded-full mb-8 border border-slate-800" style="font-size: 1.3em;">
-                <span class="text-blue-500">PIPS</span> <span class="text-white">&</span> <span class="text-red-500">PENCE</span> <span class="text-white" data-i18n="company-subtitle">CONSULTING SERVICES (P) LIMITED</span>
+            <!-- Company Name Badge -->
+            <span class="inline-block text-sm md:text-base font-bold tracking-wider uppercase bg-slate-900 px-6 py-2.5 rounded-full mb-6 border border-slate-800 shadow-lg text-cyan-400">
+                <span class="text-white text-base md:text-lg">PIPS & PENCE</span> INNOVATIVE SOLUTIONS (P) LIMITED
             </span>
             
-            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                <span data-i18n="hero-title-main">Advanced CFD Trading Consulting &</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500" data-i18n="hero-title-highlight">Custom Robots Development</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Next-Gen Engineering & <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Technology Solutions</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed" data-i18n="hero-desc">
-                Automate your edge with high-performance MT4, MT5, and cTrader bots backed by expert CFD strategy consulting.
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Empowering businesses through cutting-edge technology and robust engineering design. We build scalable systems, automated pipelines, and bespoke software solutions tailored to complex industry demands.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition-all shadow-lg" data-i18n="hero-btn-start">
-                    Start Project
+                <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-6 py-3.5 rounded-lg transition-all shadow-lg shadow-cyan-500/10 inline-block text-center">
+                    Start Your Project
                 </a>
-                <a href="#services" class="bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold px-6 py-3 rounded-full border border-slate-800 transition-all" data-i18n="hero-btn-services">
-                    Services
+                <a href="#services" class="bg-slate-900 hover:bg-slate-800 text-slate-300 font-semibold px-8 py-3.5 rounded-full border border-slate-800 transition-all text-center">
+                    Explore Services
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-18 bg-slate-900/40">
+    <section id="services" class="py-24 bg-slate-900/40">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center max-w-xl mx-auto mb-12">
-                <h2 class="text-xs font-semibold tracking-widest uppercase text-cyan-400 mb-2" data-i18n="services-tag">Core Expertise</h2>
-                <h3 class="text-2xl font-bold text-white" data-i18n="services-heading">Engineered for Performance</h3>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-cyan-400 mb-3">Core Expertise</h2>
+                <h3 class="text-3xl font-bold tracking-tight text-white">Engineered for Scalability & Performance</h3>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-6">
+            <div class="grid md:grid-cols-2 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/50 transition-all">
-                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-lg mb-4 border border-cyan-500/20">01</div>
-                    <h4 class="text-lg font-bold text-white mb-2" data-i18n="serv1-title">CFD Strategy Consulting</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="serv1-desc">
-                        Optimize risk structures, multi-asset volatility profiles, and basket execution models for steady consistency.
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl relative group hover:border-cyan-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-xl mb-6 border border-cyan-500/20">
+                        01
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">System Architecture & Technical Consulting</h4>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Optimize your technical infrastructure. We blueprint high-availability architectures, streamline workflow automation, and implement rigorous standards to ensure operational resilience and future-proof scaling.
                     </p>
-                    <ul class="space-y-1.5 text-xs text-slate-300">
-                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> <span data-i18n="serv1-li1">Risk & Drawdown Management</span></li>
-                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> <span data-i18n="serv1-li2">Multi-Asset Execution Optimization</span></li>
-                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> <span data-i18n="serv1-li3">Algorithmic Stress Testing</span></li>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> Enterprise System Architecture Design</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> Workflow Automation & Integration</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> Technical Assessment & Stress Testing</li>
                     </ul>
                 </div>
 
                 <!-- Service 2 -->
-                <div id="expertise" class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/50 transition-all">
-                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-lg mb-4 border border-cyan-500/20">02</div>
-                    <h4 class="text-lg font-bold text-white mb-2" data-i18n="serv2-title">Custom MT4, MT5 & cTrader Dev</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="serv2-desc">
-                        Convert manual strategies into efficient code, from MQL grid systems to C# cTrader cBots.
+                <div id="expertise" class="bg-slate-900 border border-slate-800 p-8 rounded-2xl relative group hover:border-cyan-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-xl mb-6 border border-cyan-500/20">
+                        02
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Custom Software & Product Engineering</h4>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Turn complex engineering challenges into clean, high-performance code. From robust backend software engines to custom technology applications, we build production-ready digital products.
                     </p>
-                    <ul class="space-y-1.5 text-xs text-slate-300">
-                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> <span data-i18n="serv2-li1">MQL4 & MQL5 Expert Advisors</span></li>
-                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> <span data-i18n="serv2-li2">cTrader cBots & Indicators (C#)</span></li>
-                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> <span data-i18n="serv2-li3">Advanced Hedging & API Integration</span></li>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> Custom Software Development (Full-Stack)</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> Automated Pipeline & Bot Engineering</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span> API Integration & Cloud Infrastructure</li>
                     </ul>
                 </div>
             </div>
@@ -153,842 +147,99 @@
     </section>
 
     <!-- Process Section -->
-    <section id="process" class="pt-24 pb-18 border-t border-slate-900">
+    <section id="process" class="py-24 border-t border-slate-900">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center max-w-xl mx-auto mb-12">
-                <h2 class="text-xs font-semibold tracking-widest uppercase text-cyan-400 mb-2" data-i18n="process-tag">How We Work</h2>
-                <h3 class="text-2xl font-bold text-white" data-i18n="process-heading">Streamlined Lifecycle</h3>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-cyan-400 mb-3">How We Work</h2>
+                <h3 class="text-3xl font-bold tracking-tight text-white">A Streamlined Engineering Lifecycle</h3>
             </div>
-            <div class="grid md:grid-cols-3 gap-6 text-center">
-                <div class="p-4">
-                    <div class="text-3xl font-extrabold text-cyan-400/20 mb-3">1</div>
-                    <h4 class="text-base font-semibold text-white mb-1" data-i18n="proc1-title">Strategy & Scope</h4>
-                    <p class="text-slate-400 text-xs" data-i18n="proc1-desc">Review rules and define precise technical parameters.</p>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-extrabold text-cyan-400/20 mb-4">1</div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Discovery & Blueprint</h4>
+                    <p class="text-slate-400 text-sm">We analyze your technical requirements, performance benchmarks, and operational goals to establish a precise engineering specification.</p>
                 </div>
-                <div class="p-4">
-                    <div class="text-3xl font-extrabold text-cyan-400/20 mb-3">2</div>
-                    <h4 class="text-base font-semibold text-white mb-1" data-i18n="proc2-title">Code & Backtest</h4>
-                    <p class="text-slate-400 text-xs" data-i18n="proc2-desc">MQL or C# coding followed by rigorous execution testing.</p>
+                <div class="p-6">
+                    <div class="text-4xl font-extrabold text-cyan-400/20 mb-4">2</div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Develop & Validate</h4>
+                    <p class="text-slate-400 text-sm">Rigorous coding and system modeling followed by intensive unit testing, stress evaluation, and edge-case optimization.</p>
                 </div>
-                <div class="p-4">
-                    <div class="text-3xl font-extrabold text-cyan-400/20 mb-3">3</div>
-                    <h4 class="text-base font-semibold text-white mb-1" data-i18n="proc3-title">Deploy & Optimize</h4>
-                    <p class="text-slate-400 text-xs" data-i18n="proc3-desc">Terminal deployment with ongoing support.</p>
+                <div class="p-6">
+                    <div class="text-4xl font-extrabold text-cyan-400/20 mb-4">3</div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Deploy & Maintain</h4>
+                    <p class="text-slate-400 text-sm">Seamless rollout into your live environment backed by ongoing maintenance, monitoring, and iterative enhancements.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="pt-24 pb-18 bg-slate-900/20 border-t border-slate-900">
-        <div class="max-w-2xl mx-auto px-6">
-            <div class="text-center mb-10">
-                <h2 class="text-xs font-semibold tracking-widest uppercase text-cyan-400 mb-2" data-i18n="contact-tag">Get in Touch</h2>
-                <h3 class="text-2xl font-bold text-white" data-i18n="contact-heading">Start Your Consultation</h3>
+    <!-- Contact Section with Form -->
+    <section id="contact" class="py-24 bg-slate-900/20 border-t border-slate-900">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-cyan-400 mb-3">Get in Touch</h2>
+                <h3 class="text-3xl font-bold tracking-tight text-white">Start Your Technology Project</h3>
             </div>
 
-            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 bg-slate-900 p-6 rounded-2xl border border-slate-800">
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6 bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                <!-- Your Web3Forms Access Key -->
                 <input type="hidden" name="access_key" value="b822d232-25f1-4ce6-b1c2-2607e0015dff">
-                <input type="hidden" name="subject" value="New Consultation Request">
+                
+                <!-- Email Subject Line -->
+                <input type="hidden" name="subject" value="New Inquiry from Pips & Pence Website">
+
+                <!-- Redirect after successful submission -->
                 <input type="hidden" name="redirect" value="https://pipsandpence.com/#contact">
 
-                <div class="grid md:grid-cols-2 gap-4">
+                <div class="grid md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1" data-i18n="form-name">Name</label>
-                        <input type="text" name="name" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-500">
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                        <input type="text" name="name" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1" data-i18n="form-email">Email</label>
-                        <input type="email" name="email" placeholder="john@example.com" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-500">
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                        <input type="email" name="email" placeholder="john@example.com" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
                     </div>
                 </div>
                 
                 <div>
-                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1" data-i18n="form-inquiry">Inquiry Type</label>
-                    <select name="inquiry_type" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-500">
-                        <option data-i18n="opt-1">Custom EA / cBot Development</option>
-                        <option data-i18n="opt-2">CFD Strategy Consulting</option>
-                        <option data-i18n="opt-3">Both / Other</option>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Scope / Inquiry Type</label>
+                    <select name="inquiry_type" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                        <option>Custom Software & Automation Development</option>
+                        <option>System Architecture & Engineering Consulting</option>
+                        <option>Both / Other Technology Inquiry</option>
                     </select>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1" data-i18n="form-details">Details</label>
-                    <textarea name="message" rows="3" placeholder="Describe platforms, indicators, and parameters..." required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-500" data-i18n-placeholder="form-placeholder"></textarea>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Details</label>
+                    <textarea name="message" rows="4" placeholder="Describe your technical architecture, automation goals, and system parameters..." required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
                 </div>
 
-                <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold py-3 rounded-lg transition-all text-sm shadow-lg cursor-pointer" data-i18n="form-btn">
-                    Send Request
+                <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold py-3.5 rounded-lg transition-all shadow-lg shadow-cyan-500/15 cursor-pointer">
+                    Send Project Inquiry
                 </button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-8 border-t border-slate-900 bg-slate-950 text-slate-400 text-xs">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-6 items-center mb-6 text-left">
+    <!-- Footer with Contact Address Placeholder -->
+    <footer class="py-12 border-t border-slate-900 bg-slate-950 text-slate-400 text-sm">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center mb-8 text-left">
             <div>
-                <h4 class="text-white font-semibold mb-1" style="font-size: 1.2em;">
-                    <span class="text-blue-500">PIPS</span> <span class="text-white">&</span> <span class="text-red-500">PENCE</span> <span class="text-white" data-i18n="company-subtitle">CONSULTING SERVICES (P) LIMITED</span>
-                </h4>
-                <p class="text-slate-500" data-i18n="footer-tagline">Institutional algorithmic development & CFD consulting.</p>
+                <h4 class="text-white font-semibold mb-2">PIPS & PENCE INNOVATIVE SOLUTIONS (P) LIMITED</h4>
+                <p class="text-xs text-slate-500">Advanced engineering development and technology solutions.</p>
             </div>
-            <div class="border border-dashed border-slate-800 bg-slate-900/50 p-3 rounded-lg text-slate-500 space-y-1">
-                <span class="text-cyan-400 font-semibold block" data-i18n="footer-address-title">[ Office Address Placeholder ]</span>
-                <p data-i18n="footer-address-line">Corporate Address Line, City, State, ZIP.</p>
-                <p class="text-slate-450"><span data-i18n="footer-email-label">Email:</span> <a href="mailto:support@pipsandpence.com" class="text-cyan-400 hover:underline">support@pipsandpence.com</a></p>
+            <!-- Office Address Placeholder -->
+            <div class="border border-dashed border-slate-800 bg-slate-900/50 p-4 rounded-xl text-xs text-slate-500">
+                <span class="text-cyan-400 font-semibold block mb-1">[ Office Address Placeholder ]</span>
+                Registered Corporate Address line 1, Line 2, City, State, PIN / ZIP Code.
             </div>
         </div>
-        <div class="max-w-6xl mx-auto px-6 border-t border-slate-900/80 pt-4 text-center text-slate-600">
-            <p data-i18n="footer-copyright">&copy; 2026 PIPS & PENCE Consulting Services (P) Limited. All rights reserved.</p>
+        <div class="max-w-6xl mx-auto px-6 border-t border-slate-900/80 pt-6 text-center text-xs text-slate-600">
+            <p>&copy; 2026 PIPS & PENCE Innovative Solutions (P) Limited. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Localization Script -->
-    <script>
-        const translations = {
-            en: {
-                "page-title": "PIPS & PENCE | MT4, MT5 & cTrader Dev",
-                "nav-services": "Services",
-                "nav-platforms": "Platforms",
-                "nav-process": "Process",
-                "nav-cta": "Book Consult",
-                "ticker-1": "Institutional CFD Strategies",
-                "ticker-2": "Multi-Platform Automation",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "Multi-Symbol & Asset EAs",
-                "ticker-5": "Portfolio Engines & Basket Trading",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "Advanced CFD Trading Consulting &",
-                "hero-title-highlight": "Custom Robots Development",
-                "hero-desc": "Automate your edge with high-performance MT4, MT5, and cTrader bots backed by expert CFD strategy consulting.",
-                "hero-btn-start": "Start Project",
-                "hero-btn-services": "Services",
-                "services-tag": "Core Expertise",
-                "services-heading": "Engineered for Performance",
-                "serv1-title": "CFD Strategy Consulting",
-                "serv1-desc": "Optimize risk structures, multi-asset volatility profiles, and basket execution models for steady consistency.",
-                "serv1-li1": "Risk & Drawdown Management",
-                "serv1-li2": "Multi-Asset Execution Optimization",
-                "serv1-li3": "Algorithmic Stress Testing",
-                "serv2-title": "Custom MT4, MT5 & cTrader Dev",
-                "serv2-desc": "Convert manual strategies into efficient code, from MQL grid systems to C# cTrader cBots.",
-                "serv2-li1": "MQL4 & MQL5 Expert Advisors",
-                "serv2-li2": "cTrader cBots & Indicators (C#)",
-                "serv2-li3": "Advanced Hedging & API Integration",
-                "process-tag": "How We Work",
-                "process-heading": "Streamlined Lifecycle",
-                "proc1-title": "Strategy & Scope",
-                "proc1-desc": "Review rules and define precise technical parameters.",
-                "proc2-title": "Code & Backtest",
-                "proc2-desc": "MQL or C# coding followed by rigorous execution testing.",
-                "proc3-title": "Deploy & Optimize",
-                "proc3-desc": "Terminal deployment with ongoing support.",
-                "contact-tag": "Get in Touch",
-                "contact-heading": "Start Your Consultation",
-                "form-name": "Name",
-                "form-email": "Email",
-                "form-inquiry": "Inquiry Type",
-                "opt-1": "Custom EA / cBot Development",
-                "opt-2": "CFD Strategy Consulting",
-                "opt-3": "Both / Other",
-                "form-details": "Details",
-                "form-placeholder": "Describe platforms, indicators, and parameters...",
-                "form-btn": "Send Request",
-                "footer-tagline": "Institutional algorithmic development & CFD consulting.",
-                "footer-address-title": "[ Office Address Placeholder ]",
-                "footer-address-line": "Corporate Address Line, City, State, ZIP.",
-                "footer-email-label": "Email:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. All rights reserved."
-            },
-            et: {
-                "page-title": "PIPS & PENCE | MT4, MT5 ja cTrader arendus",
-                "nav-services": "Teenused",
-                "nav-platforms": "Platvormid",
-                "nav-process": "Protsess",
-                "nav-cta": "Broneeri konsultatsioon",
-                "ticker-1": "Institutsionaalsed CFD strateegiad",
-                "ticker-2": "Platvormideülene automatiseerimine",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "Mitmikaktiiviga EA-d",
-                "ticker-5": "Portfellimootorid ja korvikaubandus",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "Täiustatud CFD kauplemise konsultatsioon &",
-                "hero-title-highlight": "Kohandatud robotite arendus",
-                "hero-desc": "Automatiseerige oma eelis suure jõudlusega MT4, MT5 ja cTrader robotitega, mida toetab ekspertide CFD strateegia konsultatsioon.",
-                "hero-btn-start": "Alusta projekti",
-                "hero-btn-services": "Teenused",
-                "services-tag": "Põhipädevus",
-                "services-heading": "Loodud jõudluse tagamiseks",
-                "serv1-title": "CFD strateegia konsultatsioon",
-                "serv1-desc": "Optimeerige riskistruktuure, mitmikaktiivi volatiilsusprofiile ja korvi täitmise mudeleid stabiilse järjepidevuse tagamiseks.",
-                "serv1-li1": "Riski ja kahjumi (drawdown) haldus",
-                "serv1-li2": "Mitmikaktiivi täitmise optimeerimine",
-                "serv1-li3": "Algoritmiline stressitestimine",
-                "serv2-title": "Kohandatud MT4, MT5 ja cTrader arendus",
-                "serv2-desc": "Teisendage manuaalsed strateegiad tõhusaks koodiks, alates MQL võrgustikest kuni C# cTrader cBotideni.",
-                "serv2-li1": "MQL4 ja MQL5 Expert Advisors",
-                "serv2-li2": "cTrader cBotid ja indikaatorid (C#)",
-                "serv2-li3": "Täiustatud riskimaandus ja API integratsioon",
-                "process-tag": "Kuidas me töötame",
-                "process-heading": "Sujuv elutsükkel",
-                "proc1-title": "Strateegia ja ulatus",
-                "proc1-desc": "Vaadake reeglid üle ja määrake täpsed tehnilised parameetrid.",
-                "proc2-title": "Kood ja backtest",
-                "proc2-desc": "MQL või C# kodeerimine, millele järgneb range testimine.",
-                "proc3-title": "Juurutamine ja optimeerimine",
-                "proc3-desc": "Terminali juurutamine koos pideva toega.",
-                "contact-tag": "Võta ühendust",
-                "contact-heading": "Alusta oma konsultatsiooni",
-                "form-name": "Nimi",
-                "form-email": "E-post",
-                "form-inquiry": "Päringu tüüp",
-                "opt-1": "Kohandatud EA / cBoti arendus",
-                "opt-2": "CFD strateegia konsultatsioon",
-                "opt-3": "Mõlemad / Muu",
-                "form-details": "Üksikasjad",
-                "form-placeholder": "Kirjeldage platvorme, indikaatoreid ja parameetreid...",
-                "form-btn": "Saada päring",
-                "footer-tagline": "Institutsionaalne algoritmiline arendus ja CFD konsultatsioon.",
-                "footer-address-title": "[ Kontori aadressi kohatäide ]",
-                "footer-address-line": "Ettevõtte aadress, linn, osariik, postiindeks.",
-                "footer-email-label": "E-post:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. Kõik õigused kaitstud."
-            },
-            fr: {
-                "page-title": "PIPS & PENCE | Développeurs MT4, MT5 & cTrader",
-                "nav-services": "Services",
-                "nav-platforms": "Plateformes",
-                "nav-process": "Processus",
-                "nav-cta": "Réserver une Consultation",
-                "ticker-1": "Stratégies CFD Institutionnelles",
-                "ticker-2": "Automatisation Multiplateforme",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "EAs Multi-Actifs & Multi-Symboles",
-                "ticker-5": "Moteurs de Portefeuille & Trading de Paniers",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "Conseil en Trading CFD Avancé &",
-                "hero-title-highlight": "Développement de Robots Personnalisés",
-                "hero-desc": "Automatisez votre avantage grâce à des bots MT4, MT5 et cTrader haute performance soutenus par un conseil stratégique CFD expert.",
-                "hero-btn-start": "Démarrer le Projet",
-                "hero-btn-services": "Services",
-                "services-tag": "Expertise Principale",
-                "services-heading": "Conçu pour la Performance",
-                "serv1-title": "Conseil en Stratégie CFD",
-                "serv1-desc": "Optimisez les structures de risque, les profils de volatilité multi-actifs et les modèles d'exécution de paniers pour une cohérence constante.",
-                "serv1-li1": "Gestion des Risques & du Drawdown",
-                "serv1-li2": "Optimisation de l'Exécution Multi-Actifs",
-                "serv1-li3": "Tests de Stress Algorithmiques",
-                "serv2-title": "Développement MT4, MT5 & cTrader",
-                "serv2-desc": "Convertissez vos stratégies manuelles en code efficace, des systèmes de grille MQL aux cBots cTrader en C#.",
-                "serv2-li1": "Expert Advisors MQL4 & MQL5",
-                "serv2-li2": "cBots & Indicateurs cTrader (C#)",
-                "serv2-li3": "Couverture Avancée & Intégration API",
-                "process-tag": "Comment Nous Travaillons",
-                "process-heading": "Cycle de Vie Rationalisé",
-                "proc1-title": "Stratégie & Portée",
-                "proc1-desc": "Examinez les règles et définissez des paramètres techniques précis.",
-                "proc2-title": "Code & Backtest",
-                "proc2-desc": "Codage MQL ou C# suivi de tests d'exécution rigoureux.",
-                "proc3-title": "Déploiement & Optimisation",
-                "proc3-desc": "Déploiement sur terminal avec un support continu.",
-                "contact-tag": "Entrer en Contact",
-                "contact-heading": "Démarrez Votre Consultation",
-                "form-name": "Nom",
-                "form-email": "E-mail",
-                "form-inquiry": "Type de Demande",
-                "opt-1": "Développement EA / cBot Sur Mesure",
-                "opt-2": "Conseil en Stratégie CFD",
-                "opt-3": "Les Deux / Autre",
-                "form-details": "Détails",
-                "form-placeholder": "Décrivez les plateformes, indicateurs et paramètres...",
-                "form-btn": "Envoyer la Demande",
-                "footer-tagline": "Développement algorithmique institutionnel et conseil CFD.",
-                "footer-address-title": "[ Espace Réservé pour l'Adresse du Bureau ]",
-                "footer-address-line": "Ligne d'adresse de l'entreprise, Ville, État, Code Postal.",
-                "footer-email-label": "E-mail :",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. Tous droits réservés."
-            },
-            de: {
-                "page-title": "PIPS & PENCE | MT4, MT5 & cTrader Entwicklung",
-                "nav-services": "Dienstleistungen",
-                "nav-platforms": "Plattformen",
-                "nav-process": "Prozess",
-                "nav-cta": "Beratung Buchen",
-                "ticker-1": "Institutionelle CFD-Strategien",
-                "ticker-2": "Plattformübergreifende Automatisierung",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "Multi-Symbol & Asset EAs",
-                "ticker-5": "Portfolio-Engines & Korbhandel",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "Erweiterte CFD-Trading-Beratung &",
-                "hero-title-highlight": "Entwicklung Maßgeschneiderter Roboter",
-                "hero-desc": "Automatisieren Sie Ihren Vorsprung mit hochleistungsfähigen MT4-, MT5- und cTrader-Bots, unterstützt durch professionelle CFD-Strategieberatung.",
-                "hero-btn-start": "Projekt Starten",
-                "hero-btn-services": "Dienstleistungen",
-                "services-tag": "Kernkompetenz",
-                "services-heading": "Auf Leistung Ausgelegt",
-                "serv1-title": "CFD-Strategieberatung",
-                "serv1-desc": "Optimieren Sie Risikostrukturen, Multi-Asset-Volatilitätsprofile und Korb-Ausführungsmodelle für stetige Konsistenz.",
-                "serv1-li1": "Risiko- & Drawdown-Management",
-                "serv1-li2": "Multi-Asset-Ausführungsoptimierung",
-                "serv1-li3": "Algorithmische Stresstests",
-                "serv2-title": "Benutzerdefinierte MT4, MT5 & cTrader Dev",
-                "serv2-desc": "Wandeln Sie manuelle Strategien in effizienten Code um – von MQL-Gattersystemen bis hin zu C#-cTrader-cBots.",
-                "serv2-li1": "MQL4 & MQL5 Expert Advisors",
-                "serv2-li2": "cTrader cBots & Indikatoren (C#)",
-                "serv2-li3": "Erweiterte Absicherung & API-Integration",
-                "process-tag": "Wie Wir Arbeiten",
-                "process-heading": "Optimierter Lebenszyklus",
-                "proc1-title": "Strategie & Umfang",
-                "proc1-desc": "Regeln überprüfen und präzise technische Parameter definieren.",
-                "proc2-title": "Code & Backtest",
-                "proc2-desc": "MQL- oder C#-Codierung gefolgt von strengen Ausführungstests.",
-                "proc3-title": "Bereitstellung & Optimierung",
-                "proc3-desc": "Terminal-Bereitstellung mit fortlaufendem Support.",
-                "contact-tag": "Kontaktieren Sie Uns",
-                "contact-heading": "Starten Sie Ihre Beratung",
-                "form-name": "Name",
-                "form-email": "E-Mail",
-                "form-inquiry": "Anfragetyp",
-                "opt-1": "Benutzerdefinierte EA- / cBot-Entwicklung",
-                "opt-2": "CFD-Strategieberatung",
-                "opt-3": "Beide / Sonstiges",
-                "form-details": "Details",
-                "form-placeholder": "Beschreiben Sie Plattformen, Indikatoren und Parameter...",
-                "form-btn": "Anfrage Senden",
-                "footer-tagline": "Institutionelle algorithmische Entwicklung & CFD-Beratung.",
-                "footer-address-title": "[ Büro-Adresse Platzhalter ]",
-                "footer-address-line": "Unternehmensadresse, Stadt, Bundesland, PLZ.",
-                "footer-email-label": "E-Mail:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. Alle Rechte vorbehalten."
-            },
-            nl: {
-                "page-title": "PIPS & PENCE | MT4, MT5 & cTrader Ontwikkeling",
-                "nav-services": "Diensten",
-                "nav-platforms": "Platformen",
-                "nav-process": "Proces",
-                "nav-cta": "Boek Consult",
-                "ticker-1": "Institutionele CFD Strategieën",
-                "ticker-2": "Multi-Platform Automatisering",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "Multi-Symbol & Asset EAs",
-                "ticker-5": "Portefeuille Engines & Mandje Trading",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "Geavanceerde CFD Trading Consulting &",
-                "hero-title-highlight": "Ontwikkeling van Aangepaste Robots",
-                "hero-desc": "Automatiseer uw voordeel met hoogwaardige MT4-, MT5- en cTrader-bots ondersteund door deskundige CFD-strategieconsultancy.",
-                "hero-btn-start": "Start Project",
-                "hero-btn-services": "Diensten",
-                "services-tag": "Kernexpertise",
-                "services-heading": "Ontworpen voor Prestaties",
-                "serv1-title": "CFD Strategie Consultancy",
-                "serv1-desc": "Optimaliseer risicostructuren, multi-asset volatiliteitsprofielen en mandje-uitvoeringsmodellen voor stabiele consistentie.",
-                "serv1-li1": "Risico- & Drawdown-beheer",
-                "serv1-li2": "Multi-Asset Uitvoeringsoptimalisatie",
-                "serv1-li3": "Algoritmische Stresstests",
-                "serv2-title": "Aangepaste MT4, MT5 & cTrader Dev",
-                "serv2-desc": "Zet handmatige strategieën om in efficiënte code, van MQL-gridsystemen tot C# cTrader cBots.",
-                "serv2-li1": "MQL4 & MQL5 Expert Advisors",
-                "serv2-li2": "cTrader cBots & Indicatoren (C#)",
-                "serv2-li3": "Geavanceerde Hedging & API Integratie",
-                "process-tag": "Hoe Wij Werken",
-                "process-heading": "Gestroomlijnde Levenscyclus",
-                "proc1-title": "Strategie & Omvang",
-                "proc1-desc": "Controleer regels en definieer nauwkeurige technische parameters.",
-                "proc2-title": "Code & Backtest",
-                "proc2-desc": "MQL- of C#-codering gevolgd door rigoureuze uitvoeringstests.",
-                "proc3-title": "Implementeer & Optimaliseer",
-                "proc3-desc": "Terminalimplementatie met doorlopende ondersteuning.",
-                "contact-tag": "Neem Contact Op",
-                "contact-heading": "Start Uw Consult",
-                "form-name": "Naam",
-                "form-email": "E-mail",
-                "form-inquiry": "Type Aanvraag",
-                "opt-1": "Aangepaste EA / cBot Ontwikkeling",
-                "opt-2": "CFD Strategie Consultancy",
-                "opt-3": "Beide / Anders",
-                "form-details": "Details",
-                "form-placeholder": "Beschrijf platformen, indicatoren en parameters...",
-                "form-btn": "Verstuur Aanvraag",
-                "footer-tagline": "Institutionele algoritmische ontwikkeling & CFD consultancy.",
-                "footer-address-title": "[ Kantooradres Placeholder ]",
-                "footer-address-line": "Bedrijfsadresregel, Stad, Staat, Postcode.",
-                "footer-email-label": "E-mail:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. Alle rechten voorbehouden."
-            },
-            pt: {
-                "page-title": "PIPS & PENCE | Dev MT4, MT5 & cTrader",
-                "nav-services": "Serviços",
-                "nav-platforms": "Plataformas",
-                "nav-process": "Processo",
-                "nav-cta": "Agendar Consulta",
-                "ticker-1": "Estratégias Institucionais de CFD",
-                "ticker-2": "Automação Multiplataforma",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "EAs Multi-Símbolo e Ativos",
-                "ticker-5": "Motores de Portfólio & Basket Trading",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "Consultoria Avançada em CFD &",
-                "hero-title-highlight": "Desenvolvimento de Robôs Personalizados",
-                "hero-desc": "Automatize a sua vantagem com bots de alto desempenho para MT4, MT5 e cTrader apoiados por consultoria especializada em estratégias de CFD.",
-                "hero-btn-start": "Iniciar Projeto",
-                "hero-btn-services": "Serviços",
-                "services-tag": "Expertise Principal",
-                "services-heading": "Projetado para Desempenho",
-                "serv1-title": "Consultoria em Estratégia CFD",
-                "serv1-desc": "Otimize estruturas de risco, perfis de volatilidade de múltiplos ativos e modelos de execução em cesta para consistência contínua.",
-                "serv1-li1": "Gestão de Risco & Drawdown",
-                "serv1-li2": "Otimização de Execução Multi-Ativos",
-                "serv1-li3": "Testes de Estresse Algorítmicos",
-                "serv2-title": "Dev Personalizado MT4, MT5 & cTrader",
-                "serv2-desc": " Converta estratégias manuais em código eficiente, desde sistemas de grade MQL até cBots cTrader em C#.",
-                "serv2-li1": "Expert Advisors MQL4 & MQL5",
-                "serv2-li2": "cBots & Indicadores cTrader (C#)",
-                "serv2-li3": "Hedging Avançado & Integração API",
-                "process-tag": "Como Trabalhamos",
-                "process-heading": "Ciclo de Vida Otimizado",
-                "proc1-title": "Estratégia & Escopo",
-                "proc1-desc": "Revise as regras e defina parâmetros técnicos precisos.",
-                "proc2-title": "Código & Backtest",
-                "proc2-desc": "Codificação MQL ou C# seguida de testes rigorosos de execução.",
-                "proc3-title": "Implantar & Otimizar",
-                "proc3-desc": "Implantação em terminal com suporte contínuo.",
-                "contact-tag": "Entre em Contato",
-                "contact-heading": "Inicie sua Consulta",
-                "form-name": "Nome",
-                "form-email": "E-mail",
-                "form-inquiry": "Tipo de Consulta",
-                "opt-1": "Desenvolvimento de EA / cBot Personalizado",
-                "opt-2": "Consultoria em Estratégia CFD",
-                "opt-3": "Ambos / Outro",
-                "form-details": "Detalhes",
-                "form-placeholder": "Descreva plataformas, indicadores e parâmetros...",
-                "form-btn": "Enviar Solicitação",
-                "footer-tagline": "Desenvolvimento algorítmico institucional e consultoria de CFD.",
-                "footer-address-title": "[ Espaço reservado para endereço do escritório ]",
-                "footer-address-line": "Linha de Endereço Corporativo, Cidade, Estado, CEP.",
-                "footer-email-label": "E-mail:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. Todos os direitos reservados."
-            },
-            es: {
-                "page-title": "PIPS & PENCE | Dev MT4, MT5 y cTrader",
-                "nav-services": "Servicios",
-                "nav-platforms": "Plataformas",
-                "nav-process": "Proceso",
-                "nav-cta": "Reservar Consulta",
-                "ticker-1": "Estrategias CFD Institucionales",
-                "ticker-2": "Automatización Multiplataforma",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "EAs Multiactivo y Multisímbolo",
-                "ticker-5": "Motores de Cartera & Trading de Cestas",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "Consultoría Avanzada de Trading CFD y",
-                "hero-title-highlight": "Desarrollo de Robots Personalizados",
-                "hero-desc": "Automatiza tu ventaja con bots de alto rendimiento para MT4, MT5 y cTrader respaldados por consultoría experta en estrategias CFD.",
-                "hero-btn-start": "Iniciar Proyecto",
-                "hero-btn-services": "Servicios",
-                "services-tag": "Experiencia Principal",
-                "services-heading": "Diseñado para el Rendimiento",
-                "serv1-title": "Consultoría de Estrategia CFD",
-                "serv1-desc": "Optimiza estructuras de riesgo, perfiles de volatilidad multiactivo y modelos de ejecución por cestas para una consistencia constante.",
-                "serv1-li1": "Gestión de Riesgos y Drawdown",
-                "serv1-li2": "Optimización de Ejecución Multiactivo",
-                "serv1-li3": "Pruebas de Estrés Algorítmicas",
-                "serv2-title": "Desarrollo Personalizado MT4, MT5 y cTrader",
-                "serv2-desc": "Convierte estrategias manuales en código eficiente, desde sistemas de rejilla MQL hasta cBots de cTrader en C#.",
-                "serv2-li1": "Expert Advisors MQL4 y MQL5",
-                "serv2-li2": "cBots e Indicadores cTrader (C#)",
-                "serv2-li3": "Cobertura Avanzada e Integración API",
-                "process-tag": "Cómo Trabajamos",
-                "process-heading": "Ciclo de Vida Optimizado",
-                "proc1-title": "Estrategia y Alcance",
-                "proc1-desc": "Revisa las reglas y define parámetros técnicos precisos.",
-                "proc2-title": "Código y Backtest",
-                "proc2-desc": "Codificación en MQL o C# seguida de rigurosas pruebas de ejecución.",
-                "proc3-title": "Despliegue y Optimización",
-                "proc3-desc": "Despliegue en terminal con soporte continuo.",
-                "contact-tag": "Ponte en Contacto",
-                "contact-heading": "Inicia Tu Consulta",
-                "form-name": "Nombre",
-                "form-email": "Correo Electrónico",
-                "form-inquiry": "Tipo de Consulta",
-                "opt-1": "Desarrollo de EA / cBot Personalizado",
-                "opt-2": "Consultoría de Estrategia CFD",
-                "opt-3": "Ambos / Otro",
-                "form-details": "Detalles",
-                "form-placeholder": "Describe plataformas, indicadores y parámetros...",
-                "form-btn": "Enviar Solicitud",
-                "footer-tagline": "Desarrollo algorítmico institucional y consultoría CFD.",
-                "footer-address-title": "[ Espacio reservado para la dirección de la oficina ]",
-                "footer-address-line": "Línea de dirección corporativa, Ciudad, Estado, Código Postal.",
-                "footer-email-label": "Correo:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. Todos los derechos reservados."
-            },
-            ja: {
-                "page-title": "PIPS & PENCE | MT4、MT5 & cTrader 開発",
-                "nav-services": "サービス",
-                "nav-platforms": "プラットフォーム",
-                "nav-process": "プロセス",
-                "nav-cta": "相談を予約",
-                "ticker-1": "機関投資家向けCFD戦略",
-                "ticker-2": "マルチプラットフォーム自動化",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "マルチシンボル・資産EA",
-                "ticker-5": "ポートフォリオエンジン & バスケット取引",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "高度なCFDトレーディングコンサルティング &",
-                "hero-title-highlight": "カスタムロボット開発",
-                "hero-desc": "専門的なCFD戦略コンサルティングに裏打ちされた、高性能なMT4、MT5、cTraderボットで優位性を自動化します。",
-                "hero-btn-start": "プロジェクトを開始",
-                "hero-btn-services": "サービス",
-                "services-tag": "コア専門知識",
-                "services-heading": "パフォーマンスのための設計",
-                "serv1-title": "CFD戦略コンサルティング",
-                "serv1-desc": "安定した一貫性を実現するために、リスク構造、マルチアセットのボラティリティプロファイル、バスケット実行モデルを最適化します。",
-                "serv1-li1": "リスク・ドローダウン管理",
-                "serv1-li2": "マルチアセット執行の最適化",
-                "serv1-li3": "アルゴリズムストレステスト",
-                "serv2-title": "カスタム MT4, MT5 & cTrader 開発",
-                "serv2-desc": "MQLグリッドシステムからC# cTrader cBotまで、マニュアル戦略を効率的なコードに変換します。",
-                "serv2-li1": "MQL4 & MQL5 エキスパートアドバイザー",
-                "serv2-li2": "cTrader cBot & インジケーター (C#)",
-                "serv2-li3": "高度なヘッジ & API連携",
-                "process-tag": "私たちの進め方",
-                "process-heading": "合理化されたライフサイクル",
-                "proc1-title": "戦略とスコープ",
-                "proc1-desc": "ルールを確認し、正確な技術パラメータを定義します。",
-                "proc2-title": "コーディングとバックテスト",
-                "proc2-desc": "MQLまたはC#のコーディングに続き、厳格な執行テストを実施します。",
-                "proc3-title": "デプロイと最適化",
-                "proc3-desc": "継続的なサポート付きのターミナルデプロイ。",
-                "contact-tag": "お問い合わせ",
-                "contact-heading": "相談を始める",
-                "form-name": "お名前",
-                "form-email": "メールアドレス",
-                "form-inquiry": "お問い合わせの種類",
-                "opt-1": "カスタム EA / cBot 開発",
-                "opt-2": "CFD戦略コンサルティング",
-                "opt-3": "両方 / その他",
-                "form-details": "詳細",
-                "form-placeholder": "プラットフォーム、インジケーター、パラメータなどを説明してください...",
-                "form-btn": "リクエストを送信",
-                "footer-tagline": "機関投資家向けアルゴリズム開発 & CFDコンサルティング。",
-                "footer-address-title": "[ オフィス住所プレースホルダー ]",
-                "footer-address-line": "企業住所、市区町村、都道府県、郵便番号。",
-                "footer-email-label": "メール:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. All rights reserved."
-            },
-            it: {
-                "page-title": "PIPS & PENCE | Sviluppo MT4, MT5 & cTrader",
-                "nav-services": "Servizi",
-                "nav-platforms": "Piattaforme",
-                "nav-process": "Processo",
-                "nav-cta": "Prenota Consulenza",
-                "ticker-1": "Strategie CFD Istituzionali",
-                "ticker-2": "Automazione Multi-Piattaforma",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "EA Multi-Simbolo & Asset",
-                "ticker-5": "Motori di Portfolio & Basket Trading",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "Consulenza di Trading CFD Avanzata &",
-                "hero-title-highlight": "Sviluppo Robot Personalizzati",
-                "hero-desc": "Automatizza il tuo vantaggio con bot MT4, MT5 e cTrader ad alte prestazioni supportati da una consulenza strategica CFD esperta.",
-                "hero-btn-start": "Avvia Progetto",
-                "hero-btn-services": "Servizi",
-                "services-tag": "Competenza Principale",
-                "services-heading": "Progettato per le Prestazioni",
-                "serv1-title": "Consulenza Strategia CFD",
-                "serv1-desc": "Ottimizza le strutture di rischio, i profili di volatilità multi-asset e i modelli di esecuzione a paniere per una coerenza costante.",
-                "serv1-li1": "Gestione del Rischio & del Drawdown",
-                "serv1-li2": "Ottimizzazione dell'Esecuzione Multi-Asset",
-                "serv1-li3": "Stress Testing Algoritmico",
-                "serv2-title": "Sviluppo Personalizzato MT4, MT5 & cTrader",
-                "serv2-desc": "Converti strategie manuali in codice efficiente, dai sistemi a griglia MQL ai cBot cTrader in C#.",
-                "serv2-li1": "Expert Advisor MQL4 & MQL5",
-                "serv2-li2": "cBot & Indicatori cTrader (C#)",
-                "serv2-li3": "Hedging Avanzato & Integrazione API",
-                "process-tag": "Come Lavoriamo",
-                "process-heading": "Ciclo di Vita Ottimizzato",
-                "proc1-title": "Strategia & Scopo",
-                "proc1-desc": "Esamina le regole e definisci parametri tecnici precisi.",
-                "proc2-title": "Codice & Backtest",
-                "proc2-desc": "Codifica MQL o C# seguita da rigorosi test di esecuzione.",
-                "proc3-title": "Distribuzione & Ottimizzazione",
-                "proc3-desc": "Distribuzione sul terminale con supporto continuo.",
-                "contact-tag": "Mettiti in Contatto",
-                "contact-heading": "Inizia la Tua Consulenza",
-                "form-name": "Nome",
-                "form-email": "E-mail",
-                "form-inquiry": "Tipo di Richiesta",
-                "opt-1": "Sviluppo EA / cBot Personalizzato",
-                "opt-2": "Consulenza Strategia CFD",
-                "opt-3": "Entrambi / Altro",
-                "form-details": "Dettagli",
-                "form-placeholder": "Descrivi piattaforme, indicatori e parametri...",
-                "form-btn": "Invia Richiesta",
-                "footer-tagline": "Sviluppo algoritmico istituzionale e consulenza CFD.",
-                "footer-address-title": "[ Segnaposto Indirizzo Ufficio ]",
-                "footer-address-line": "Indirizzo Aziendale, Città, Stato, CAP.",
-                "footer-email-label": "E-mail:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. Tutti i diritti riservati."
-            },
-            ar: {
-                "page-title": "PIPS & PENCE | تطوير MT4 و MT5 و cTrader",
-                "nav-services": "الخدمات",
-                "nav-platforms": "المنصات",
-                "nav-process": "العملية",
-                "nav-cta": "حجز استشارة",
-                "ticker-1": "استراتيجيات عقود الفروقات المؤسسية",
-                "ticker-2": "الأتمتة متعددة المنصات",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "مستشارون آليون متعددون للأصول والرموز",
-                "ticker-5": "محركات المحافظ وتداول السلال",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "استشارات تداول عقود الفروقات المتقدمة و",
-                "hero-title-highlight": "تطوير الروبوتات المخصصة",
-                "hero-desc": "قم بأتمتة ميزتك التنافسية باستخدام روبوتات عالية الأداء لـ MT4 و MT5 و cTrader مدعومة باستشارات خبيرة في استراتيجيات عقود الفروقات.",
-                "hero-btn-start": "ابدأ المشروع",
-                "hero-btn-services": "الخدمات",
-                "services-tag": "الخبرة الأساسية",
-                "services-heading": "مصمم خصيصاً للأداء",
-                "serv1-title": "استشارات استراتيجية عقود الفروقات",
-                "serv1-desc": "تحسين هياكل المخاطر، ملفات تعريف تقلبات الأصول المتعددة، ونماذج تنفيذ السلال لتحقيق الاتساق المستمر.",
-                "serv1-li1": "إدارة المخاطر وتراجع رأس المال (Drawdown)",
-                "serv1-li2": "تحسين تنفيذ الأصول المتعددة",
-                "serv1-li3": "اختبار الإجهاد الخوارزمي",
-                "serv2-title": "تطوير مخصص لـ MT4 و MT5 و cTrader",
-                "serv2-desc": "تحويل الاستراتيجيات اليدوية إلى كود فعال، من أنظمة الشبكة في MQL إلى روبوتات cTrader بـ C#.",
-                "serv2-li1": "خبراء التداول MQL4 و MQL5",
-                "serv2-li2": "روبوتات ومؤشرات cTrader (C#)",
-                "serv2-li3": "التحوط المتقدم وتكامل واجهة برمجة التطبيقات (API)",
-                "process-tag": "كيف نعمل",
-                "process-heading": "دورة حياة مبسطة",
-                "proc1-title": "الاستراتيجية والنطاق",
-                "proc1-desc": "مراجعة القواعد وتحديد المعايير التقنية بدقة.",
-                "proc2-title": "الكود والاختبار الخلفي",
-                "proc2-desc": "برمجة MQL أو C# يتبعها اختبارات تنفيذ صارمة.",
-                "proc3-title": "النشر والتحسين",
-                "proc3-desc": "النشر على المحطة مع دعم مستمر.",
-                "contact-tag": "تواصل معنا",
-                "contact-heading": "ابدأ استشارتك",
-                "form-name": "الاسم",
-                "form-email": "البريد الإلكتروني",
-                "form-inquiry": "نوع الاستفسار",
-                "opt-1": "تطوير مستشار آلي / روبوت مخصص",
-                "opt-2": "استشارات استراتيجية عقود الفروقات",
-                "opt-3": "كلاهما / أخرى",
-                "form-details": "التفاصيل",
-                "form-placeholder": "صف المنصات والمؤشرات والمعايير...",
-                "form-btn": "إرسال الطلب",
-                "footer-tagline": "التطوير الخوارزمي المؤسسي واستشارات عقود الفروقات.",
-                "footer-address-title": "[ عنصر نائب لعنوان المكتب ]",
-                "footer-address-line": "سطر عنوان الشركة، المدينة، الولاية، الرمز البريدي.",
-                "footer-email-label": "البريد الإلكتروني:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. جميع الحقوق محفوظة."
-            },
-            ta: {
-                "page-title": "PIPS & PENCE | MT4, MT5 & cTrader உருவாக்கம்",
-                "nav-services": "சேவைகள்",
-                "nav-platforms": "தளங்கள்",
-                "nav-process": "முறை",
-                "nav-cta": "ஆலோசனை பெறுக",
-                "ticker-1": "நிறுவன CFD உத்திகள்",
-                "ticker-2": "பல்-தள ஆட்டோமேஷன்",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "பல்-சின்னம் & சொத்து EA-க்கள்",
-                "ticker-5": "போர்ட்ஃபோலியோ எஞ்சின்கள் & பாஸ்கெட் வர்த்தகம்",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "மேம்பட்ட CFD வர்த்தக ஆலோசனை &",
-                "hero-title-highlight": "தனிப்பயன் ரோபோக்கள் உருவாக்கம்",
-                "hero-desc": "நிபுணர் CFD உத்தி ஆலோசனையுடன் கூடிய உயர் செயல்திறன் கொண்ட MT4, MT5 மற்றும் cTraderபோட்கள் மூலம் உங்கள் வர்த்தகத்தை தானியங்குபடுத்துங்கள்.",
-                "hero-btn-start": "திட்டத்தைத் தொடங்கு",
-                "hero-btn-services": "சேவைகள்",
-                "services-tag": "முக்கிய நிபுணத்துவம்",
-                "services-heading": "செயல்திறனுக்காக வடிவமைக்கப்பட்டது",
-                "serv1-title": "CFD உத்தி ஆலோசனை",
-                "serv1-desc": "சீரான நிலைத்தன்மைக்காக ஆபத்து கட்டமைப்புகள், பல-சொத்து மாறுபாடு சுயவிவரங்கள் மற்றும் பாஸ்கெட் மரணதண்டனை மாதிரிகளை மேம்படுத்தவும்.",
-                "serv1-li1": "ஆபத்து & இழப்பு (Drawdown) மேலாண்மை",
-                "serv1-li2": "பல-சொத்து மரணதண்டனை உகப்பாக்கம்",
-                "serv1-li3": "அல்காரிதமிக் ஸ்ட்ரெஸ் டெஸ்டிங்",
-                "serv2-title": "தனிப்பயன் MT4, MT5 & cTrader உருவாக்கம்",
-                "serv2-desc": "MQL கிரிட் அமைப்புகள் முதல் C# cTrader cBot-கள் வரை கையேடு உத்திகளை திறமையான குறியீடாக மாற்றவும்.",
-                "serv2-li1": "MQL4 & MQL5 எக்ஸ்பெர்ட் அட்வைசர்கள்",
-                "serv2-li2": "cTrader cBot-கள் & குறிகாட்டிகள் (C#)",
-                "serv2-li3": "மேம்பட்ட ஹெட்ஜிங் & API ஒருங்கிணைப்பு",
-                "process-tag": "நாங்கள் எப்படி வேலை செய்கிறோம்",
-                "process-heading": "நெறிப்படுத்தப்பட்ட வாழ்க்கைச் சுழற்சி",
-                "proc1-title": "உத்தி & நோக்கம்",
-                "proc1-desc": "விதிகளையும் துல்லியமான தொழில்நுட்ப அளவு கோல்களையும் மதிப்பாய்வு செய்யவும்.",
-                "proc2-title": "குறியீடு & பின் பரிசோதனை",
-                "proc2-desc": "MQL அல்லது C# குறியீட்டு முறை மற்றும் கடுமையான மரணதண்டனை சோதனை.",
-                "proc3-title": "வரிசைப்படுத்து & உகப்பாக்கு",
-                "proc3-desc": "தொடர்ச்சியான ஆதரவுடன் டெர்மினல் வரிசைப்படுத்தல்.",
-                "contact-tag": "தொடர்பு கொள்ளவும்",
-                "contact-heading": "உங்கள் ஆலோசனையைத் தொடங்குங்கள்",
-                "form-name": "பெயர்",
-                "form-email": "மின்னஞ்சல்",
-                "form-inquiry": "வினவல் வகை",
-                "opt-1": "தனிப்பயன் EA / cBot உருவாக்கம்",
-                "opt-2": "CFD உத்தி ஆலோசனை",
-                "opt-3": "இரண்டும் / பிற",
-                "form-details": "விவரங்கள்",
-                "form-placeholder": "தளங்கள், குறிகாட்டிகள் மற்றும் அளவுருக்களை விவரிக்கவும்...",
-                "form-btn": "கோரிக்கையை அனுப்பு",
-                "footer-tagline": "நிறுவன அல்காரிதமிக் மேம்பாடு & CFD ஆலோசனை.",
-                "footer-address-title": "[ அலுவலக முகவரி இடம் ]",
-                "footer-address-line": "கார்ப்பரேட் முகவரி வரி, நகரம், மாநிலம், அஞ்சல் குறியீடு.",
-                "footer-email-label": "மின்னஞ்சல்:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை."
-            },
-            te: {
-                "page-title": "PIPS & PENCE | MT4, MT5 & cTrader డెవలప్‌మెంట్",
-                "nav-services": "సేవలు",
-                "nav-platforms": "ప్లాట్‌ఫారమ్‌లు",
-                "nav-process": "ప్రక్రియ",
-                "nav-cta": "కన్సల్ట్ బుక్ చేయండి",
-                "ticker-1": "సంస్థాగత CFD వ్యూహాలు",
-                "ticker-2": "మల్టీ-ప్లాట్‌ఫారమ్ ఆటోమేషన్",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "మల్టీ-సింబల్ & అసెట్ EA లు",
-                "ticker-5": "పోర్ట్‌ఫోలియో ఇంజిన్‌లు & బాస్కెట్ ట్రేడింగ్",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "అధునాతన CFD ట్రేడింగ్ కన్సల్టింగ్ &",
-                "hero-title-highlight": "కస్టమ్ రోబోట్ల అభివృద్ధి",
-                "hero-desc": "నిపుణుల CFD వ్యూహ కన్సల్టింగ్ మద్దతుతో అధిక-పనితీరు గల MT4, MT5 మరియు cTrader బాట్లతో మీ అంచును ఆటోమేట్ చేయండి.",
-                "hero-btn-start": "ప్రాజెక్ట్ ప్రారంభించండి",
-                "hero-btn-services": "సేవలు",
-                "services-tag": "ప్రధాన నైపుణ్యం",
-                "services-heading": "పనితీరు కోసం ఇంజనీరింగ్ చేయబడింది",
-                "serv1-title": "CFD వ్యూహ కన్సల్టింగ్",
-                "serv1-desc": "స్థిరమైన స్థిరత్వం కోసం రిక్ స్ట్రక్చర్స్, మల్టీ-అసెట్ అస్థిరత ప్రొఫైల్‌లు మరియు బాస్కెట్ ఎగ్జిక్యూషన్ మోడళ్లను ఆప్టిమైజ్ చేయండి.",
-                "serv1-li1": "రిస్క్ & డ్రాడౌన్ నిర్వహణ",
-                "serv1-li2": "మల్టీ-అసెట్ ఎగ్జిక్యూషన్ ఆప్టిమైజేషన్",
-                "serv1-li3": "అల్గారిథమిక్ స్ట్రెస్ టెస్టింగ్",
-                "serv2-title": "కస్టమ్ MT4, MT5 & cTrader డెవ్",
-                "serv2-desc": "మాన్యువల్ వ్యూహాలను సమర్థవంతమైన కోడ్‌గా మార్చండి, MQL గ్రిడ్ సిస్టమ్స్ నుండి C# cTrader cBotల వరకు.",
-                "serv2-li1": "MQL4 & MQL5 నిపుణుల సలహాదారులు",
-                "serv2-li2": "cTrader cBots & సూచికలు (C#)",
-                "serv2-li3": "అధునాతన హెడ్జింగ్ & API ఇంటిగ్రేషన్",
-                "process-tag": "మేము ఎలా పని చేస్తాము",
-                "process-heading": "క్రమబద్ధీకరించిన జీవితచక్రం",
-                "proc1-title": "వ్యూహం & పరిధి",
-                "proc1-desc": "నియమాలను సమీక్షించండి మరియు ఖచ్చితమైన సాంకేతిక పారామితులను నిర్వచించండి.",
-                "proc2-title": "కోడ్ & బ్యాక్‌టెస్ట్",
-                "proc2-desc": "MQL లేదా C# కోడింగ్ తర్వాత కఠినమైన ఎగ్జిక్యూషన్ టెస్టింగ్.",
-                "proc3-title": "డిప్లాయ్ & ఆప్టిమైజ్",
-                "proc3-desc": "కొనసాగుతున్న మద్దతుతో టర్మినల్ డిప్లాయ్‌మెంట్.",
-                "contact-tag": "సంప్రదించండి",
-                "contact-heading": "మీ కన్సల్టేషన్ ప్రారంభించండి",
-                "form-name": "పేరు",
-                "form-email": "ఇమెయిల్",
-                "form-inquiry": "విచారణ రకం",
-                "opt-1": "కస్టమ్ EA / cBot డెవలప్‌మెంట్",
-                "opt-2": "CFD వ్యూహ కన్సల్టింగ్",
-                "opt-3": "రెండు / ఇతర",
-                "form-details": "వివరాలు",
-                "form-placeholder": "ప్లాట్‌ఫారమ్‌లు, సూచికలు మరియు పారామితులను వివరించండి...",
-                "form-btn": "అభ్యర్థనను పంపు",
-                "footer-tagline": "సంస్థాగత అల్గారిథమిక్ అభివృద్ధి & CFD కన్సల్టింగ్.",
-                "footer-address-title": "[ కార్యాలయ చిరునామా స్థానభ్రంశం ]",
-                "footer-address-line": "కార్పొరేట్ చిరునామా లైన్, నగరం, రాష్ట్రం, పిన్ కోడ్.",
-                "footer-email-label": "ఇమెయిల్:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. అన్ని హక్కులు ప్రత్యేకించబడ్డాయి."
-            },
-            hi: {
-                "page-title": "PIPS & PENCE | MT4, MT5 और cTrader विकास",
-                "nav-services": "सेवाएं",
-                "nav-platforms": "प्लेटफार्म",
-                "nav-process": "प्रक्रिया",
-                "nav-cta": "परामर्श बुक करें",
-                "ticker-1": "संस्थागत सीएफडी रणनीतियाँ",
-                "ticker-2": "बहु-प्लेटफार्म स्वचालन",
-                "ticker-3": "MT4/MT5/cTrader",
-                "ticker-4": "बहु-प्रतीक और संपत्ति ईए",
-                "ticker-5": "पोर्टफोलियो इंजन और बास्केट ट्रेडिंग",
-                "company-subtitle": "CONSULTING SERVICES (P) LIMITED",
-                "hero-title-main": "उन्नत सीएफडी ट्रेडिंग परामर्श और",
-                "hero-title-highlight": "कस्टम रोबोट विकास",
-                "hero-desc": "विशेषज्ञ सीएफडी रणनीति परामर्श द्वारा समर्थित उच्च-प्रदर्शन MT4, MT5 और cTrader बॉट्स के साथ अपनी बढ़त को स्वचालित करें।",
-                "hero-btn-start": "प्रोजेक्ट शुरू करें",
-                "hero-btn-services": "सेवाएं",
-                "services-tag": "मुख्य विशेषज्ञता",
-                "services-heading": "प्रदर्शन के लिए इंजीनियर",
-                "serv1-title": "सीएफडी रणनीति परामर्श",
-                "serv1-desc": "स्थिर निरंतरता के लिए जोखिम संरचनाओं, बहु-संपत्ति अस्थिरता प्रोफाइल और बास्केट निष्पादन मॉडल को अनुकूलित करें।",
-                "serv1-li1": "जोखिम और ड्राडाउन प्रबंधन",
-                "serv1-li2": "बहु-संपत्ति निष्पादन अनुकूलन",
-                "serv1-li3": "एल्गोरिदमिक तनाव परीक्षण",
-                "serv2-title": "कस्टम MT4, MT5 और cTrader देव",
-                "serv2-desc": "मैनुअल रणनीतियों को कुशल कोड में बदलें, MQL ग्रिड सिस्टम से लेकर C# cTrader cBots तक।",
-                "serv2-li1": "MQL4 और MQL5 एक्सपर्ट एडवाइजर्स",
-                "serv2-li2": "cTrader cBots और संकेतक (C#)",
-                "serv2-li3": "उन्नत हेजिंग और API एकीकरण",
-                "process-tag": "हम कैसे काम करते हैं",
-                "process-heading": "सुव्यवस्थित जीवनचक्र",
-                "proc1-title": "रणनीति और दायरा",
-                "proc1-desc": "नियमों की समीक्षा करें और सटीक तकनीकी मापदंडों को परिभाषित करें।",
-                "proc2-title": "कोड और बैकटेस्ट",
-                "proc2-desc": "कठोर निष्पादन परीक्षण के बाद MQL या C# कोडिंग।",
-                "proc3-title": "तैनात और अनुकूलित करें",
-                "proc3-desc": "चल रहे समर्थन के साथ टर्मिनल की तैनाती।",
-                "contact-tag": "संपर्क करें",
-                "contact-heading": "अपना परामर्श शुरू करें",
-                "form-name": "नाम",
-                "form-email": "ईमेल",
-                "form-inquiry": "पूछताछ का प्रकार",
-                "opt-1": "कस्टम EA / cBot विकास",
-                "opt-2": "सीएफडी रणनीति परामर्श",
-                "opt-3": "दोनों / अन्य",
-                "form-details": "विवरण",
-                "form-placeholder": "प्लेटफार्म, संकेतक और पैरामीटर का वर्णन करें...",
-                "form-btn": "अनुरोध भेजें",
-                "footer-tagline": "संस्थागत एल्गोरिदमिक विकास और सीएफडी परामर्श।",
-                "footer-address-title": "[ कार्यालय का पता ]",
-                "footer-address-line": "कॉर्पोरेट पता पंक्ति, शहर, राज्य, पिन कोड।",
-                "footer-email-label": "ईमेल:",
-                "footer-copyright": "© 2026 PIPS & PENCE Consulting Services (P) Limited. सर्वाधिकार सुरक्षित।"
-            }
-        };
-
-        function switchLanguage(lang) {
-            const elements = document.querySelectorAll("[data-i18n]");
-            elements.forEach(el => {
-                const key = el.getAttribute("data-i18n");
-                if (translations[lang] && translations[lang][key]) {
-                    el.textContent = translations[lang][key];
-                }
-            });
-
-            // Handle placeholders
-            const placeholders = document.querySelectorAll("[data-i18n-placeholder]");
-            placeholders.forEach(el => {
-                const key = el.getAttribute("data-i18n-placeholder");
-                if (translations[lang] && translations[lang][key]) {
-                    el.placeholder = translations[lang][key];
-                }
-            });
-
-            // Set text direction for Arabic
-            if (lang === 'ar') {
-                document.documentElement.setAttribute('dir', 'rtl');
-            } else {
-                document.documentElement.setAttribute('dir', 'ltr');
-            }
-
-            // Save preference
-            localStorage.setItem("preferred_lang", lang);
-        }
-
-        // Load saved language on page load
-        window.addEventListener("DOMContentLoaded", () => {
-            const savedLang = localStorage.getItem("preferred_lang") || "en";
-            const langSelect = document.getElementById("langSelect");
-            if (langSelect) {
-                langSelect.value = savedLang;
-            }
-            switchLanguage(savedLang);
-        });
-    </script>
 </body>
 </html>
